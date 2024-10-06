@@ -58,11 +58,9 @@ public class CreditAccountTest {
 
     @Test // 6. Покупка на сумму при начальном балансе в 0
     public void purchaseAmountNull() {
-<<<<<<< HEAD
+
         CreditAccount credit = new CreditAccount(0, 5000, 15);
-=======
-        CreditAccount credit = new CreditAccount(0, 50_000, 15);
->>>>>>> 295ae425fe891b964ff4956df05380ea0c68f95b
+
         credit.pay(10_000);
         int actual = credit.balance;
         int expected = 0;
@@ -144,9 +142,4 @@ public class CreditAccountTest {
         int expected = 0;
         Assertions.assertEquals(expected, actual);
     }
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 295ae425fe891b964ff4956df05380ea0c68f95b
